@@ -1,0 +1,205 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #373738;
+    padding: 15px;
+    height: 120px;
+  }
+  
+  .logo {
+    width: 120px; /* Adjust the width of the logo container */
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  nav {
+    flex-grow: 1;
+    /* Additional styles for navigation links */
+  }
+  
+
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    margin-left: auto ;
+}
+.flexContainer > div {
+    padding: 20px;
+    margin: 20px;
+  
+}
+
+.mySkills {
+    margin-top: 50px; /* Adjust this value as needed */
+}
+
+.myWork {
+    padding: 20px;
+    margin: 20px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-areas: 
+    "item1 item2 item2"
+    "item3 item4 item4";
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.custom-row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.view-all-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .view-all-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Customize the background color */
+    color: white; /* Customize the text color */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .view-all-button a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+
+nav ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+nav ul li {
+    color: #ECF0F1;
+    padding: 0 10px;
+}
+
+.heroImg {
+    position: relative; 
+    height: 600px;
+    padding: 25px;
+    background-image: url('../images/bg-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heroImg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust if required */
+    z-index: -1;
+}
+
+.content {
+    position: relative; /* Makes sure our content is above the overlay */
+    color: #00000; /* Set text color to white for better visibility */
+    max-width: 700px; /* Controls the width of the content */
+    margin: auto; /* Centers the content */
+    text-align: left; /* Aligns the content to the center */
+}
+
+.content p {
+    font-size: 2.5rem; /* Increases the font size */
+    font-weight: 1000; /* Semi-bold text */
+    line-height: 1.4; /* Adjust line spacing */
+    margin-bottom: 20px; /* Space between paragraph and button */
+}
+
+
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.content p, 
+.content button {
+    font-family: 'Georgia', serif; 
+}
+
+footer {
+    background-color: #373738;
+    padding: 10px 0; 
+    color: #ECF0F1;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+footer ul li {
+    padding: 0 5px;
+
+}
+
+
+#downloadButton.hovered {
+    background-color: #0073b1; /* A slightly different color than the original to indicate hover */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexContainer > div {
+        width: 100%;
+    }
+
+
+    .workGrid {
+        display: grid;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item1" 
+        "item2"
+        "item3" 
+        "item4";
+    }
+  }
